@@ -5,6 +5,8 @@ html
  
 body
 {
+	position: relative;
+    min-height: 100vh;
 	margin:0 0;
 }
 
@@ -18,41 +20,82 @@ body
 .title
 {
 	margin:10px 0 0 0;
-	text-align:left;
+	text-align: left;
 	color:#FFFFFF;
+}
+
+#title-text
+{
+	position: relative;
+	left: 20px;
 }
 
 .login
 {
-	text-align:right;
 	margin:10px 0 0 0;
 	color:#FFFFFF;
 }
 
-.navbar.navbar-default
+.main
+{
+	padding-bottom: 30px;
+}
+
+.site-footer
+{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	min-height:30px;
+	text-align:center;
+	padding:5px;
+	background-color:#81BEF7;
+	color:#FFFFFF;
+}
+
+.navbar.navbar-dark
 {
 	background-color:#81BEF7;
 }
 
-.navbar.navbar-default .navbar-nav > li > a 
+.navbar.navbar-dark .navbar-nav > li > a 
 {
 	color:#FFFFFF;
 }
 
+.navbar.navbar-dark .navbar-nav > li > a:hover
+{
+	color:#FFFFFF;
+}
+
+.navbar .nav-item:hover .nav-link
+{ 
+	background-color:#2E64FE;
+}
+
+.navbar .nav-item:hover .dropdown-menu
+{ 
+	background-color:#81BEF7;
+}
+
+.navbar .nav-item:hover .dropdown-menu .dropdown-item
+{ 
+	color:#FFFFFF;
+}
+
+.navbar .nav-item:hover .dropdown-menu .dropdown-item:hover
+{ 
+	background-color:#2E64FE;
+}
+
 @media all and (min-width: 576px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ background-color:#2E64FE; }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; background-color:#81BEF7; }
-	.navbar .nav-item:hover .dropdown-menu .dropdown-item{ color:#FFFFFF; }
-	.navbar .nav-item:hover .dropdown-menu .dropdown-item:hover{ background-color:#2E64FE; }
+	.navbar .nav-item .dropdown-menu{ display:none; }
+	.navbar .nav-item:hover .dropdown-menu{ display:block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
 @media all and (max-width: 576px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ background-color:#2E64FE; }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; background-color:#81BEF7;}
-	.navbar .nav-item:hover .dropdown-menu .dropdown-item{ color:#FFFFFF; }
-	.navbar .nav-item:hover .dropdown-menu .dropdown-item:hover{ background-color:#2E64FE; }
+	.navbar .nav-item .dropdown-menu{ display:none; }
+	.navbar .nav-item:hover .dropdown-menu{ display:block; }
 	.navbar .nav-item .dropdown-menu{ margin-left:0; }
 }
