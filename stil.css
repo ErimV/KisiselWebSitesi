@@ -20,7 +20,7 @@ body
 .title
 {
 	margin:10px 0 0 0;
-	text-align: left;
+	text-align:left;
 	color:#FFFFFF;
 }
 
@@ -30,16 +30,25 @@ body
 	left: 20px;
 }
 
-.login
-{
-	margin:10px 0 0 0;
-	color:#FFFFFF;
-}
-
 .main
 {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin: 0 0;
 }
+
+.left-part
+{
+	text-align: left;
+	border: 2px solid black;
+}
+
+.right-part
+{
+	text-align: left;
+	border: 2px solid black;
+}
+
 
 .site-footer
 {
@@ -47,8 +56,8 @@ body
 	bottom:0;
 	width:100%;
 	min-height:30px;
+	padding: 5px;
 	text-align:center;
-	padding:5px;
 	background-color:#81BEF7;
 	color:#FFFFFF;
 }

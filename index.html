@@ -3,9 +3,9 @@
 
 <head>
 	<title>Hakkında</title>
-	<link href="stil.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="stil.css" rel="stylesheet" />
 	<meta charset="utf-8">
 </head>
 
@@ -14,22 +14,12 @@
 	<header class="site-header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-10 col-sm-10 title">
+				<div class="col-md-6 col-sm-6 title">
 					<h2 id="title-text">ERİM VURUCU</h2>
 					<h3 id="title-text">Hakkında</h3>
 				</div>
-				<div class="col-md-2 col-sm-2 login">
-					<form action="login.php" method="post">
-						E-Mail:<br>
-						<input type="email" size="25"  maxlength="150" name="email" required><br>
-						 
-						Şifre:<br>
-						<input type="password" size="25"  maxlength="150" name="password" required><br>
-						 
-						<button type="submit" name="login">Giriş Yap</button>
-					</form> 
-				</div>	
 			</div>
+		</div>
 		</div>
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark">
@@ -39,23 +29,26 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Hakkında</a>
+							<a class="nav-link" href="index.html">Hakkında</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Özgeçmiş</a>
+							<a class="nav-link" href="resume.html">Özgeçmiş</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">İlgi Alanlarım</a>
+							<a class="nav-link" href="myaoi.html">İlgi Alanlarım</a>
 						</li>						
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Şehrim</a>
+							<a class="nav-link" href="mycity.html" id="navbarDropdown">Şehrim</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Mirasımız</a></li>
-								<li><a class="dropdown-item" href="#">Takımımız</a></li>
+								<li><a class="dropdown-item" href="ourheritage.html">Mirasımız</a></li>
+								<li><a class="dropdown-item" href="ourteam.html">Takımımız</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">İletişim</a>
+							<a class="nav-link" href="contact.html">İletişim</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Giriş</a>
 						</li>
 					</ul>
 				</div>
@@ -66,12 +59,19 @@
 	<section class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					Hayat özetim <br>
-					--------------
+				<div class="col-md-5 col-sm-12 left-part">
+					<h4 id="par-title">Hayat Özetim:</h4>
+					<p>Adım Erim Vurucu. 8 Mart 2001 yılında İstanbul Fatih'te doğdum. Zamanımda 8 yıl olan ilköğretimin ortasında eğitim sistemi değişti. İlköğretim 4 yıl, ortaöğretim 4 yıl olarak düzenlendi ve benim okulum ilköğretim olmayı seçip bizi mezun etmeye söz vermiş olmasına rağmen 7.senem bittiğinde bizi başka okula aktarma kararı aldı. Ailem zaten memleketleri olan Sakarya'ya taşınmayı düşünüyordu ancak okulumun bitmesini bekliyorlardı. Halihazırda yeni okula geçmem gerekeceği için Sakarya'ya taşındık. Son sınıfımı ve lisemi burada okudum.</p>
+					<p>Üniversite sınavı sonucunda lise başından beri aklımdaki tek bölüm olan bilgisayar mühendisliğine Trakya Üniversitesi'nde başladım. Burada eğitim gördüğüm 2 senenin ardından yatay geçiş ile Sakarya Üniversitesi'ne geçiş yaptım. Şuan 3. sınıf olarak öğrenciliğime devam ediyorum.</p> 
 				</div>
-				<div class="col-md-12 col-sm-12">
-					sevdiği spor,etkinlik vb ait resimler, linkler vb.
+				<div class="col-md-2 col-sm-12">
+					
+				</div>
+				<div class="col-md-5 col-sm-12 right-part">
+					<h4 id="par-title">Etkinliklerim:</h4>
+					<p>Henüz İstanbul'da iken ilkokul 5.sınıfta öğretmenimin ısrarları sonucu bir matematik olimpiyatına katıldım ve bu olimpiyatta derece yapıp ödül aldım.</p>
+					<p>Aynı dönemlerde hafta sonları Cerrahpaşa Tıp Fakültesi içerisinde bulunan İstanbul Üniversitesi Basketbol Kulübü'ne giderdim. Sadece hobi olarak gittiğim bir sürenin ardından beni takıma çağırdılar. Yaz tatilinin ardından takımda oynamaya başlayacak iken o yaz bir bisiklet kazasında kolumu kırdım. Uzun süren bir iyileşme dönemin ve okul durumumun belirsizliği sebebiyle belkide profesyonel basketbol hayatım başlamadan bitmiş oldu ama basketbol hep hobim olarak kalmaya devam etti ve edecek.</p>
+					<p>Sakarya'ya taşınmamızın ardından yeni okulumda, 8.sınıfta daha önce sadece birkaç kez oynamış olduğum masa tenisine başladım. Her gün okul çıkışlarında okulun zaten yıllardır olan takımının çalışmalarına katılırdım. Birkaç aylık öğrenme sürecimin ardından beni takıma dahil ettiler. Bu takımla birkaç yerel turnuvaya katıldık. Liseye geçmemle birlikte lisemin masa tenisi takımında bir sene daha devam ettim. 8.sınıftaki kadar eğlenmediğim için takımı bıraktım ve böylece masa tenisi de bir hobi olarak kalmış oldu.</p>
 				</div>
 			</div>
 		</div>
