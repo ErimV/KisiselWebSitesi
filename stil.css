@@ -6,7 +6,7 @@ html
 body
 {
 	position: relative;
-    min-height: 100vh;
+    	min-height: 100vh;
 	margin:0 0;
 }
 
@@ -32,23 +32,34 @@ body
 
 .main
 {
-	padding-bottom: 20px;
-	padding-top: 20px;
-	margin: 0 0;
+	padding-bottom: 50px;
 }
 
-.left-part
+.text
 {
+	margin-top: 20px;
 	text-align: left;
 	border: 2px solid black;
 }
 
-.right-part
-{
-	text-align: left;
-	border: 2px solid black;
+.outer {
+	margin-top: 20px;
+	padding: 2px;
+	background-color: lightgray;
 }
 
+.inner {
+  	background: white;
+}
+
+.outer > h3, .inner {
+ 	margin: 10px;
+  	padding: 1px;
+}
+
+.inner > h4, p {
+  	margin: 5px;
+}
 
 .site-footer
 {
