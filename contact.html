@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>İletişim</title>
+	<link href="stil.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="contact.js"></script>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class="bg">
+		
+		<form action="https://formspree.io/f/xpzbkjbg" method="post">
+			<h3>İletişim</h3>
+			İsminiz:
+			<input type="text" size="25"  class="name" maxlength="150" placeholder="İsminiz" name="name">
+
+			E-Mail:
+			<input type="text" size="25"  class="email" maxlength="150" placeholder="E-Mail" name="email">
+
+			Mesajınız:
+			<textarea id="message" class="message" name="message" rows="5" placeholder="Mesajınız"></textarea>
+
+			<button type="reset" name="clear">Temizle</button>					 
+			<button type="submit" class="submit" name="send">Gönder</button>
+			<div class="error"></div>
+
+		</form> 
+	</div>
+</body>
+</html>
